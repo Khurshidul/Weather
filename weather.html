@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Temperature</title>
+
+    <link rel="stylesheet" href="css/weather.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+
+<body class="container" style="background-image: url('bg-image.jpg');">
+    <h1 class="text-white h1-bg mt-5 mx-auto text-center p-3">Search to know weather for individual city</h1>
+    <section class="container-fluid">
+        <!-- Search to See your result -->
+        <div class="input-group mb-3 mt-5 w-75 mx-auto">
+            <input id="city-name" type="text" class="form-control" placeholder="Search your city"
+                aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button onclick="searchCityTemp()" class="btn btn-outline-black text-white" type="button"
+                id="button-search">Search</button>
+        </div>
+
+    </section>
+    <section id="display-result" class="container-fluid text-center text-white">
+        <img class="img-fluid" id="weather-icon" src="http://openweathermap.org/img/wn/10d@2x.png" alt="">
+        <h1 id="city">Dhaka</h1>
+        <h3><span id="temp">30.05</span>&degC</h3>
+        <h4 id="condition" class="leads">Rain</h4>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+    <script src="js/weather.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+body{
+    background-repeat: no-repeat;
+}
+.h1-bg{
+    background-color: rgba(30, 143, 255, 0.151);
+}
